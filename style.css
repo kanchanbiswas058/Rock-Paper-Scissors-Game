@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #fdfbfb, #ebedee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 500px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+}
+
+.status {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #555;
+}
+
+.choices {
+  display: flex;
+  justify-content: space-around;
+  margin: 25px 0;
+}
+
+.choice {
+  font-size: 2.5rem;
+  padding: 15px;
+  border: none;
+  background: #e0f7fa;
+  border-radius: 50%;
+  transition: transform 0.2s ease, background 0.3s;
+  cursor: pointer;
+}
+
+.choice:hover {
+  transform: scale(1.2);
+  background: #00acc1;
+  color: white;
+}
+
+.result-box {
+  font-size: 1.3rem;
+  margin-top: 10px;
+}
+
+#result-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#result-text.win {
+  color: green;
+}
+#result-text.lose {
+  color: red;
+}
+#result-text.draw {
+  color: orange;
+}
+
+#emoji {
+  font-size: 2.5rem;
+  animation: pop 0.3s ease-in-out;
+}
+
+@keyframes pop {
+  0% { transform: scale(0.6); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+#reset-btn {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#reset-btn:hover {
+  background-color: #0097a7;
+}
